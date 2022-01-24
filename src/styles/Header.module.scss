@@ -18,8 +18,12 @@
     background-color: #323232;
     padding: 0 20px 0 20px;
     font-size: 16px;
+}
 
-
+%common_subNav {
+    display: inline-block; 
+    background-color: #323232;
+    z-index: 1;
 }
 
 
@@ -36,33 +40,39 @@
         }
 
         &__logo {
-            padding: 20px;
-            width: 50%;
+            padding-top: 25px;
+            width: 80%;
+            align-items: center;
 
             &__mobile {
                 padding: 10px;
-                width: 25%;
+                width: 50%;
             }
         }
 
         &__menu {
 
             &__mobile {
-                width: 75%;
-                height: 75%;
+                padding-top: 20px;
+                padding-right: 5px;
+                &__close {
+                    width: 100%;
+                }
             }
         }
 
     &__nav {
         @extend %common_nav;
+        height: 57px;
+        align-items: center;
         display: flex;
         flex-grow: 0.2;
         top: 3px;
         position: relative;
-        @media (min-width: 700px ) {
+       /* @media (min-width: 700px ) {
             gap: 50px;
-        }
-        gap: 25px;
+        }*/
+        //gap: 25px;
         &__mobile {
             @extend %common_nav;
             display: grid;
@@ -73,11 +83,12 @@
                 color:#d1a04f  ;
             }
             &__subNav {
-                display: inline-block; 
+                @extend %common_subNav;
+                &__mobile {
+                    position: relative;
+                    @extend %common_subNav
+                }
                 position: fixed;
-                background-color: #323232;
-                z-index: 1;
-
                 
             }
         }
