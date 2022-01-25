@@ -1,3 +1,27 @@
+# Kaan's Notes for Tester
+Hey guys,
+
+Hope this readMe finds you well. Let's do a deep dive on what I've got going on in this project.
+
+    - React 17 - Redux. Using effect hooks, useSelector to prevent prop drilling. Header Reducer has the initial state.
+
+    - Using classnames to update element classes conditionally.
+
+    - Sass - all components have their own styles/.
+
+    - Unit testing using Jest and React-renderer
+
+    - react-device-detect helps me figure out whether the app is running on mobile or not. To test it, you're gonna have to restart after switching your browser from desktop to mobile and vice-versa. PLEASE DON'T FORGET TO REFRESH!!! Otherwise the styling changes won't take effect. Annoying, but that's how react-device-detect does it.
+
+    - Intentionally, haven't used any bootstrap convenience other than Row/Col. No DropdownsMenu items, etc.
+
+That about covers it. Thank you for the opportunity, looking forward to your feedback.
+
+-K
+
+
+
+
 # Front End Skill Assesment
 
 Thank you so much for your interest in a position on the Front End Development team at The Wonderful Company. We are very excited to continue our interview process with you!
