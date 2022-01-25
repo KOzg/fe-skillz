@@ -1,0 +1,30 @@
+%common_subNav {
+    background-color: #323232;
+    z-index: 1;
+}
+            .sub_header {
+                @extend %common_subNav;
+                padding: 18px;
+                display: inline-block; 
+                position: fixed;
+
+                &__mobile {
+                    @extend %common_subNav;
+                    background-color: #79766b;
+                    padding: 10px;
+                    background-color: #79766b;
+
+                    &__subName {
+                        padding: 10px;
+                    }
+                }
+                
+                &__subName {
+                    padding-top: 10px;
+                    color: white;
+
+                    &__hovered {
+                        color:#d1a04f
+                    }
+                }
+            }
