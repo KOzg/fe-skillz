@@ -3,6 +3,8 @@ Hey guys,
 
 Hope this readMe finds you well. Let's do a deep dive on what I've got going on in this project.
 
+    - Got a bunch of dependencies so first thing's, first: npm install #please
+
     - React 17 - Redux. Using effect hooks, useSelector to prevent prop drilling. Header Reducer has the initial state.
 
     - Using classnames to update element classes conditionally.
